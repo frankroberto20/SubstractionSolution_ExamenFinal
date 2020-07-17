@@ -30,9 +30,15 @@ namespace SubtractionProject.Tests
         }
 
         [Fact]
-        public void NegativeSubtractionOverLimit()
+        public void NegativeSubtractionOverLimitTwoNumbersNearLimit()
         {
             Assert.Throws<OverflowException>(() => SubtractClass.Subtract(2147483647, -2147483647));
+        }
+
+        [Fact]
+        public void PositiveSubtractionOverLimitTwoNumbersNearLimit()
+        {
+            Assert.Throws<OverflowException>(() => SubtractClass.Subtract(-2147483647, 2147483647));
         }
 
     }
