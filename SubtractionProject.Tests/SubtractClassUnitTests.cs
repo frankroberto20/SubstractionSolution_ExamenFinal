@@ -23,5 +23,11 @@ namespace SubtractionProject.Tests
             Assert.Equal(SubtractClass.Subtract(-18, -11), -7);
         }
 
+        [Fact]
+        public void NegativeInputPositiveResult()
+        {
+            Assert.Equal(SubtractClass.Subtract(-10, -30), 20);
+        }
+
     }
 }
