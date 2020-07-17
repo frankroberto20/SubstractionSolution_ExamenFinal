@@ -29,5 +29,11 @@ namespace SubtractionProject.Tests
             Assert.Equal(SubtractClass.Subtract(-10, -30), 20);
         }
 
+        [Fact]
+        public void NegativeSubtractionOverLimit()
+        {
+            Assert.Throws<OverflowException>(() => SubtractClass.Subtract(2147483647, -2147483647));
+        }
+
     }
 }
