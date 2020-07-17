@@ -1,4 +1,5 @@
 ﻿using System;
+using SubtractionProject;
 
 namespace SubtractionConsoleProject
 {
@@ -6,7 +7,10 @@ namespace SubtractionConsoleProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int x = Convert.ToInt32(args[0]);
+            int y = Convert.ToInt32(args[1]);
+
+            Console.WriteLine(SubtractClass.Subtract(x, y));
         }
     }
 }
