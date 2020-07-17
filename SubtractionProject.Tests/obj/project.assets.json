@@ -1962,6 +1962,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "SubtractionProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SubtractionProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SubtractionProject.dll": {}
+        }
       }
     }
   },
@@ -6497,11 +6507,17 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "SubtractionProject/1.0.0": {
+      "type": "project",
+      "path": "../SubtractionProject/SubtractionProject.csproj",
+      "msbuildProject": "../SubtractionProject/SubtractionProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "SubtractionProject >= 1.0.0",
       "coverlet.collector >= 1.0.1",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -6539,7 +6555,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rober\\OneDrive - Instituto Tecnologico de Santo Domingo (INTEC)\\INS368 Tendencias en Desarrollo de Aplicaciones\\Code\\SubstractionSolution_ExamenFinal\\SubtractionProject\\SubtractionProject.csproj": {
+              "projectPath": "C:\\Users\\rober\\OneDrive - Instituto Tecnologico de Santo Domingo (INTEC)\\INS368 Tendencias en Desarrollo de Aplicaciones\\Code\\SubstractionSolution_ExamenFinal\\SubtractionProject\\SubtractionProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

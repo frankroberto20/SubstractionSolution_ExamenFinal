@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "SubtractionProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SubtractionProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SubtractionProject.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SubtractionProject/1.0.0": {
+      "type": "project",
+      "path": "../SubtractionProject/SubtractionProject.csproj",
+      "msbuildProject": "../SubtractionProject/SubtractionProject.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "SubtractionProject >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\rober\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rober\\OneDrive - Instituto Tecnologico de Santo Domingo (INTEC)\\INS368 Tendencias en Desarrollo de Aplicaciones\\Code\\SubstractionSolution_ExamenFinal\\SubtractionProject\\SubtractionProject.csproj": {
+              "projectPath": "C:\\Users\\rober\\OneDrive - Instituto Tecnologico de Santo Domingo (INTEC)\\INS368 Tendencias en Desarrollo de Aplicaciones\\Code\\SubstractionSolution_ExamenFinal\\SubtractionProject\\SubtractionProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
